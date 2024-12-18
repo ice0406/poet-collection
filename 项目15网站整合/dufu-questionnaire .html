@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>问卷调查</title>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+ <header>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-section">
+   <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" >
+            </a>
+            <!-- 汉堡按钮 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 折叠内容 -->
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首页</a>
+                    </li>
+                    <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">李白</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <li><a href="libai-experience1.html" class="dropdown-item">个人经历</a></li>
+                <li><a href="libai-representativeworks3.html" class="dropdown-item">代表作品</a></li>
+                 <li><a href="questionnaire1.html" class="dropdown-item">调查问卷</a></li>
+           </ul>
+         </div>
+         <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">杜甫</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="dufu-achievement1.html" class="dropdown-item">个人成就</a></li>
+                <li><a href="dufu-questionnaire .html" class="dropdown-item">作品问卷</a></li>
+           </ul>
+         </div>
+                  <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">白居易</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="bjy-representativeworks.html" class="dropdown-item">个人成就</a></li>
+                <li><a href="bjy-experience.html" class="dropdown-item">个人经历</a></li>
+           </ul>
+         </div>
+    </div>
+  </nav>
+</header>
+    
+
+    <!-- 容器部分 -->
+   <div class="container">
+    <h1 id="title">你最喜欢杜甫的哪首作品</h1>
+    <form>
+        <div class="form-container">
+            <!-- 左侧的表单输入区域 -->
+            <div class="form-left">
+                <label for="email">邮箱地址</label>
+                <input type="email" id="email" name="email" placeholder="邮箱地址">
+
+                <label for="nickname">昵称</label>
+                <input type="text" id="nickname" name="nickname" placeholder="您的昵称">
+
+                <label>性别</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="男">
+                    <label for="male">男</label>
+                    <input type="radio" id="female" name="gender" value="女">
+                    <label for="female">女</label>
+                </div>
+
+                <label for="birthdate">出生日期</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+            </div>
+
+            <!-- 右侧的图片选择区域 -->
+            <div class="form-right">
+                <label>请选择所有您喜欢的作品</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <img src="images\12-1.jpg" alt="春望">
+                        <input type="checkbox" id="spring" name="poems" value="春望">
+                        <label for="spring">春望</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <img src="images\12-2.jpg" alt="登岳阳楼">
+                        <input type="checkbox" id="tower" name="poems" value="登岳阳楼">
+                        <label for="tower">登岳阳楼</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <img src="images\12-3.jpg" alt="江南逢李龟年">
+                        <input type="checkbox" id="jiangnan" name="poems" value="江南逢李龟年">
+                        <label for="jiangnan">江南逢李龟年</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <img src="images\12-4.jpg" alt="望岳">
+                        <input type="checkbox" id="mountain" name="poems" value="望岳">
+                        <label for="mountain">望岳</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="form-end">
+            <label for="reason">请说明您的理由</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="填写您的理由"></textarea>
+            </div>
+
+        <button type="submit">提交</button>
+    </form>
+</div>
+
+
+        </div>
+        <!--end container-->
+         <!--页面尾部-->
+      <footer>
+        <nav>
+            <ul>
+                <li><a href="#"> 帮助中心 |</li>
+                <li> <a href="mailto:ise_Webteam@ujn.edu.cn">&nbsp;联系我们 </a>|</li>
+                <li><a href="#"> &nbsp;关于我们  </a>|</li>
+                <li><a href="#"> &nbsp;隐私声明  </a>|</li>
+                <li><a href="#"> &nbsp;意见反馈  </a></li>
+            </ul>
+        </nav>
+        <address><a href="http://www.ujn.edu.cn">Copyright &copy; 2022014410王泽斌</a></address>
+    </footer>
+
+    <script src="js/jquery.slim.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first,  then Bootstrap JS -->
+		
+	</body>
+
+</html>
+   

@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    background: linear-gradient(to right,rgb(210, 180, 140),rgb(253, 245, 230),rgb(210, 180, 140));    
+    text-align: center;
+    text-align: center;
+    color:rgb(128,128,0);
+    font-size: 12px;
+    padding: 20px 0;  /* 设置footer上下内边距正确 */
+}
+
+footer nav {
+    margin-bottom: 20px;  /* 设置footer内nav的下外边距正确 */
+}
+
+footer a{
+    color:SaddleBrown;
+}
+
+footer li{
+     list-style: none;     
+     display:inline-block;
+}

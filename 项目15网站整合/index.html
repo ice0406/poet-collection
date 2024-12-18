@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>首页</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    #circle{
+    width: 3000px;
+    position: absolute; /* 设置图片为绝对定位 */
+    top: 50%; /* 图片垂直居中 */
+    left: 50%; /* 图片水平居中 */
+    transform: translate(-50%, -50%); /* 移动图片中心到指定位置 */
+    max-width: 100%; /* 限制图片宽度 */
+    height: auto; /* 保持比例 */
+    z-index: -1; /* 将图片置于最低图层 */
+    opacity: 0.3; /* 设置透明度为50% */
+}
+</style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+     <header>
+        <svg  id="circle" xmlns=http://www.w3.org/2000/svg width=100% height=100% viewBox="0 0 100 100" preserveAspectRatio=xMidYMid fill=none>
+            <circle cx=50 cy=50 r=25.944 stroke=#ead7c7>
+                <animate attributeName=r calcMode=spline values=0;40 keyTimes=0;1 dur=2 keySplines="0 0.2 0.8 1" begin=-0.5s repeatCount=indefinite stroke-width=2/>
+                <animate attributeName=opacity calcMode=spline values=1;0 keyTimes=0;1 dur=2 keySplines="0.2 0 0.8 1" begin=-0.5s repeatCount=indefinite stroke-width=2/>
+            </circle>
+            <circle cx=50 cy=50 r=40 stroke=#edcab9>
+                <animate attributeName=r calcMode=spline values=0;40 keyTimes=0;1 dur=2 keySplines="0 0.2 0.8 1" begin=0s repeatCount=indefinite stroke-width=2/>
+                <animate attributeName=opacity calcMode=spline values=1;0 keyTimes=0;1 dur=2 keySplines="0.2 0 0.8 1" begin=0s repeatCount=indefinite stroke-width=2/>
+            </circle>
+</svg>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-section">
+   <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" >
+            </a>
+            <!-- 汉堡按钮 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 折叠内容 -->
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">首页</a>
+                    </li>
+                    <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">李白</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <li><a href="libai-experience1.html" class="dropdown-item">个人经历</a></li>
+                <li><a href="libai-representativeworks3.html" class="dropdown-item">代表作品</a></li>
+                 <li><a href="questionnaire1.html" class="dropdown-item">调查问卷</a></li>
+           </ul>
+         </div>
+         <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">杜甫</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="dufu-achievement1.html" class="dropdown-item">个人成就</a></li>
+                <li><a href="dufu-questionnaire .html" class="dropdown-item">作品问卷</a></li>
+           </ul>
+         </div>
+                  <div class="dropdown" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">白居易</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a href="bjy-representativeworks.html" class="dropdown-item">个人成就</a></li>
+                <li><a href="bjy-experience.html" class="dropdown-item">个人经历</a></li>
+           </ul>
+         </div>
+    </div>
+  </nav>
+</header>
+
+    <div id="flowers">
+        <img src="images/flower1.png" class="flower">
+        <img src="images/flower2.png" class="flower">
+        <img src="images/flower3.png" class="flower">
+        <img src="images/flowerRight.png" id="flowerRight">
+        <img src="images/flowerLeft.png" id="flowerLeft">
+    </div>
+<main>
+    <div id="content">
+        <pre id="fommer">
+            他们生活在一个辉煌的时期
+            他们有着不同的性格和风格
+            他们创造了无数的经典和奇迹
+        </pre>
+        <pre id="latter">
+            长河落日，斯人已远，我们只能从诗句中得以
+            窥见诗人们的叹息，惆怅和向往。
+            在这里，让我们走进<h3>李白</h3>、<h3>杜甫</h3>、<h3>白居易</h3>的世界。
+        </pre>
+        <img src="images/title.png" alt="Title Image" class="title-image">
+    </div>
+</main>
+        </div>
+        <div id="poets">
+            <div class="poet"><div class="intro"><h2><a href="libai-experience1.html">诗仙李白</a></h2></div><img src="images/lb.png"><p class="poem"><a href="">长风破浪会有时<br>直挂云帆济沧海</a></p></div>
+            <div class="poet"><div class="intro"><h2><a href="dufu-achievement1.html">诗圣杜甫</a></h2></div><img src="images/df.png"><p class="poem"><a href="">无边落木萧萧下<br>不尽长江滚滚来</a></p></div>
+            <div class="poet"><div class="intro"><h2><a href="bjy-experience.html">诗魔白居易</a></h2></div><img src="images/bjy.png"><p class="poem"><a href="">人间四月芳菲尽<br>山寺桃花始盛开</a></p></div>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#"> 帮助中心 |</li>
+                <li> <a href="mailto:ise_Webteam@ujn.edu.cn">&nbsp;联系我们 </a>|</li>
+                <li><a href="#"> &nbsp;关于我们  </a>|</li>
+                <li><a href="#"> &nbsp;隐私声明  </a>|</li>
+                <li><a href="#"> &nbsp;意见反馈  </a></li>
+            </ul>
+        </nav>
+        <address><a href="http://www.ujn.edu.cn">Copyright &copy; 2022014410王泽斌</a></address>
+    </footer>
+     <script src="js/jquery.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
